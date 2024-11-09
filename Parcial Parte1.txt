@@ -1,0 +1,125 @@
+1- Teniendo en cuenta las capas del modelo OSI, mencionar que protocolos interactúan en las: a. Capa de Aplicación: b. Capa de Transporte: 
+1. Protocolos en las Capas del Modelo OSI
+a. Capa de Aplicación:
+Los protocolos de la capa de aplicación incorporan funcionalidades de las tres capas superiores del modelo OSI (Aplicación, Presentación y Sesión) 1
+Algunos protocolos comunes incluyen:
+HTTP
+FTP
+SMTP
+DNS
+DHCP
+b. Capa de Transporte:
+Esta capa maneja las responsabilidades de transporte y algunas funciones de la capa de sesión 2
+Los principales protocolos son:
+TCP
+UDP
+
+2- Detallar las clases de IP detallando la cantidad de bit destinados a la parte de Red y Host, para cada clase.
+
+Clase A
+Bits totales: 32 bits
+Bits de red: 7 bits para red (primer bit siempre es 0) 
+Bits de host: 24 bits
+Capacidad: Puede tener hasta 16,777,214 hosts por red 
+Uso: Destinadas a redes muy grandes, como las de gobiernos o grandes corporaciones 
+El rango de esta clase seria: desde 00000000.xxxxxxxx.xxxxxxxx.xxxxxxxx (0.xxx.xxx.xxx) hasta 01111111.xxxxxxxx.xxxxxxxx.xxxxxxxx (127.xxx.xxx.xxx)
+Debido a que las direcciones 127.xxx.xxx.xxx se utilizan para auto diagnóstico, el primer byte de esta clase estaría comprendido entre 1 y 126, y el número total de direcciones que se pueden asignar a hosts seria de 16.777.214. 
+
+Clase B
+Bits totales: 32 bits
+Bits de red: 16 bits (primeros dos bits son 10)
+Bits de host: 16 bits
+Uso: Se asigna típicamente a organizaciones que tienen varios hosts en sus redes 
+El rango de esta clase seria : 
+desde 10000000.xxxxxxxx.xxxxxxxx.xxxxxxxx (128.xxx.xxx.xxx) hasta 10111111.xxxxxxxx.xxxxxxxx.xxxxxxxx (191.xxx.xxx.xxx) 
+En este caso el numero de IP asignables es de 65534.
+
+Clase C
+Bits totales: 32 bits
+Bits de red: 24 bits (primeros tres bits son 110)
+Bits de host: 8 bits
+Uso: Adecuados para redes con pocos hosts 
+Nota importante: Todas las direcciones IP en IPv4 utilizan un total de 32 bits y la máscara se forma poniendo en 1 los bits que identifican la red y en 0 los bits que identifican al host.
+El rango de la clase C seria: desde 11000000.xxxxxxxx.xxxxxxxx.xxxxxxxx (192.xxx.xxx.xxx) hasta 11011111.xxxxxxxx.xxxxxxxx.xxxxxxxx (223.xxx.xxx.xxx) El número de direcciones IP disponibles en esta clase seria de 254. 
+Redes TCP/IP 7 Existen , además dos clases especiales para usos concretos
+
+La clase D (con rango desde 224.xxx.xxx.xxx hasta 239.xxx.xxx.xxx), utilizada para multicast y otros usos específicos, y la clase E, aun sin especificar.
+
+
+3- Mencionar tres tipos de componentes que pueden conectar en una red PAN.
+Componentes de una Red PAN (Personal Area Network)
+ tres tipos principales de componentes que se pueden conectar en una red PAN:
+1. Dispositivos móviles personales:
+Teléfonos móviles (smartphones)
+Tablets
+PDAs (Asistentes Digitales Personales)
+2. Equipos informáticos:
+Ordenadores/Computadoras
+Puntos de acceso a Internet
+3. Periféricos y dispositivos auxiliares:
+Impresoras
+Dispositivos con tecnología Bluetooth
+Dispositivos con WiFi Direct
+
+Características importantes:
+? Estos dispositivos se conectan dentro del área inmediata del usuario
+? Principalmente utilizan tecnologías inalámbricas como Bluetooth y WiFi Direct para la conexión 
+? La red PAN es fundamental para nuestra vida digital al permitir la interconexión y comunicación de nuestros dispositivos personales 
+
+4- Responder: 
+a. 
+A que red wifi estas conectado?:  no me encuentro conectado a la red wifi, estoy conectado a la red lan, por cable 
+b.
+ A que rango de IP pertenece?: mi ip 192.168.7.118
+? Clase: C
+? Rango de direcciones IP privadas: 192.168.0.0 a 192.168.255.255
+
+7- Mencionar los recursos básicos que debes configurar en la instalación de una máquina virtual.
+Memoria RAM:
+Debes asignar una cantidad adecuada de memoria RAM a la máquina virtual. Esto dependerá del sistema operativo que planeas instalar y de las aplicaciones que deseas ejecutar. Generalmente, se recomienda asignar al menos 2 GB para sistemas operativos ligeros y más para sistemas más pesados.
+Espacio en Disco Duro:
+Es necesario definir el tamaño del disco duro virtual que utilizará la máquina. Este espacio se utiliza para el sistema operativo, aplicaciones y archivos. Asegúrate de que el tamaño sea suficiente para tus necesidades, considerando que puedes optar por un disco dinámico que crezca según sea necesario.
+CPU (Unidad Central de Procesamiento):
+La asignación de núcleos de CPU es crucial para el rendimiento de la máquina virtual. Dependiendo de la carga de trabajo, puedes asignar uno o más núcleos. Es importante no sobrecargar la CPU del sistema anfitrión.
+Configuración de Red:
+Debes configurar la red para que la máquina virtual pueda conectarse a Internet o a otras redes. Esto puede incluir la selección de un adaptador de red NAT, puente o interno, según tus necesidades de conectividad.
+Controladores de Video:
+Si planeas utilizar la máquina virtual para tareas que requieren gráficos, como juegos o diseño gráfico, asegúrate de asignar suficiente memoria de video y habilitar la aceleración 3D si es compatible.
+Dispositivos Periféricos:
+Considera la configuración de dispositivos adicionales como USB, impresoras o unidades de CD/DVD virtuales, que pueden ser necesarios para tu trabajo en la máquina virtual.
+8- Mencionar los servicios que podemos utilizar de la Nube: PaaS.
+
+La Plataforma como Servicio (PaaS) es un modelo de servicio en la nube que proporciona un entorno completo para el desarrollo, prueba, implementación y escalado de aplicaciones. 
+
+Detallados los servicios que se pueden utilizar son los  siguientes:
+Entornos de Desarrollo:
+PaaS ofrece herramientas y entornos de desarrollo integrados que permiten a los desarrolladores crear aplicaciones sin preocuparse por la infraestructura subyacente.
+Bases de Datos:
+Servicios de bases de datos gestionadas que permiten a los desarrolladores almacenar y gestionar datos sin tener que configurar y mantener servidores de bases de datos.
+Servicios de Middleware:
+Proporciona software que conecta diferentes aplicaciones y servicios, facilitando la comunicación y la gestión de datos entre ellos.
+Escalabilidad Automática:
+Permite que las aplicaciones se escalen automáticamente según la demanda, lo que es ideal para manejar picos de tráfico sin intervención manual.
+Integración Continua y Entrega Continua (CI/CD):
+Herramientas que permiten a los equipos de desarrollo automatizar el proceso de pruebas y despliegue, mejorando la eficiencia y reduciendo errores.
+Servicios de Seguridad:
+Incluye características de seguridad integradas, como autenticación, autorización y encriptación, para proteger las aplicaciones y los datos.
+Soporte para Múltiples Lenguajes de Programación:
+PaaS generalmente soporta varios lenguajes de programación y frameworks, lo que permite a los desarrolladores trabajar en el entorno que prefieran.
+API y Servicios de Integración:
+Proporciona APIs que permiten a las aplicaciones interactuar con otros servicios y plataformas, facilitando la integración de funcionalidades adicionales.
+9- Definir: 
+a. Rama 
+b. Repositorio 
+c. Mencionas las tres áreas de trabajo que utiliza el gitbash para trabajar.
+a. Rama
+Una rama (o branch) en Git es una versión paralela del código dentro de un repositorio. Permite a los desarrolladores trabajar en diferentes características o correcciones de errores de manera aislada sin afectar la rama principal (generalmente llamada main o master). Las ramas son útiles para gestionar el desarrollo de nuevas funcionalidades, realizar pruebas y colaborar con otros sin interferir en el trabajo de los demás.
+b. Repositorio
+Un repositorio es un espacio de almacenamiento donde se guarda el código fuente de un proyecto, junto con su historial de cambios. En Git, un repositorio puede ser local (en tu máquina) o remoto (en un servidor, como GitHub). Contiene todos los archivos del proyecto y la información sobre las versiones anteriores, lo que permite a los desarrolladores rastrear y gestionar cambios a lo largo del tiempo.
+c. Tres Áreas de Trabajo en Git Bash
+Directorio de Trabajo (Working Directory):
+Es la carpeta donde se encuentran los archivos del proyecto. Aquí es donde los desarrolladores realizan cambios, añaden o eliminan archivos.
+Área de Preparación (Staging Area):
+También conocida como "index", es un espacio intermedio donde se preparan los cambios antes de confirmarlos (commit). Los archivos que se añaden al área de preparación están listos para ser guardados en el historial del repositorio.
+Repositorio Local (Local Repository):
+Es donde se almacenan los commits realizados. Cada vez que se confirma un cambio, se guarda una instantánea del estado del proyecto en esta área. El repositorio local permite a los desarrolladores acceder al historial de cambios y revertir a versiones anteriores si es necesario.
